@@ -16,7 +16,7 @@
      <!-- Available Balance-->
      <div class="stats shadow">
       <div class="stat">
-        <div class="stat-value">9,400</div>
+        <div id="available-balance" class="stat-value">9400</div>
         <div class="stat-desc">Available Balance</div>
       </div>
     </div>
@@ -24,7 +24,7 @@
       <div class="divider"></div>
       <!-- Button start here -->
       <div class="flex gap-9"><button class="btn">Add Money</button>
-        <button class="btn">Add Money</button></div>
+        <button class="btn">Cash Out</button></div>
       <div class="divider">
               </div>
               <!-- input section  -->
@@ -34,17 +34,17 @@
                     <label class="label">
                       <span class="label-text">Amount</span>
                     </label>
-                    <input type="text" placeholder="Amount" class="input input-bordered" required />
+                    <input id="input-cashout" type="text" placeholder="Amount" class="input input-bordered" required />
                   </div>
                   <div class="form-control">
                     <label class="label">
-                      <span class="label-text">Password</span>
+                      <span class="label-text">Pin</span>
                     </label>
-                    <input type="password" placeholder="Pin Number" class="input input-bordered" autocomplete="off" required />
+                    <input id="input-pin" type="password" placeholder="Pin Number" class="input input-bordered" autocomplete="off" required />
                     
                   </div>
                   <div class="form-control mt-6">
-                    <button class="btn btn-primary">Login</button>
+                    <button id="btn-cashout" class="btn btn-primary">Login</button>
                   </div>
                 </form>
               </div>
@@ -52,7 +52,7 @@
             
           </div>
     </main>
-    <!-- <script src="home.js"></script> -->
+    <script src="cashout.js"></script>
 </body>
 </html>
     
