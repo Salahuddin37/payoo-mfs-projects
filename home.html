@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="hidden">
+<body class="">
     <main class="flex justify-center items-center h-screen">
         <div class="mockup-phone">
             <div class="camera"></div>
@@ -23,12 +23,13 @@
 
       <div class="divider"></div>
       <!-- Button start here -->
-      <div class="flex gap-9"><button class="btn">Add Money</button>
-        <button class="btn">Cashout</button></div>
+      <div class="flex gap-9">
+        <button id="btn-show-add-money" class="btn">Add Money</button>
+        <button id="btn-show-cash-out" class="btn">Cashout</button></div>
       <div class="divider">
               </div>
-              <!-- input section  -->
-              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <!--add money input section  -->
+              <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <form class="card-body">
                   <div class="form-control">
                     <label class="label">
@@ -48,11 +49,35 @@
                   </div>
                 </form>
               </div>
+
+              <!-- Cash Out section -->
+              <div id="cash-out-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="input-cashout" type="text" placeholder="Amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin</span>
+                    </label>
+                    <input id="input-pin" type="password" placeholder="Pin Number" class="input input-bordered" autocomplete="off" required />
+                    
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-cashout" class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
             </div>
             
           </div>
     </main>
     <script src="home.js"></script>
+    <script src="cashout.js"></script>
+    <script src="features.js"></script>
 </body>
 </html>
     

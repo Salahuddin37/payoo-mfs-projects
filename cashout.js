@@ -11,15 +11,15 @@ console.log(inputPin);
 if(inputPin === '1234'){
     console.log('cashout to your money');
 
-    const availableBalance = document.getElementById('available-balance').innerText;
-    console.log(availableBalance);
+    const accountBalance = document.getElementById('account-balance').innerText;
+    console.log(accountBalance);
 
-    const availableBalanceNumber = parseFloat(availableBalance);
+    const accountBalanceNumber = parseFloat(accountBalance);
     const inputCashoutNumber = parseFloat(inputCashout);
-    const newBalance = availableBalanceNumber - inputCashoutNumber;
+    const newBalance = accountBalanceNumber - inputCashoutNumber;
     console.log(newBalance);
 
-    document.getElementById('available-balance').innerText = newBalance;
+    document.getElementById('account-balance').innerText = newBalance;
 }
 else{
     alert('Failed to cashout! Please try again.');
